@@ -3,9 +3,14 @@
 //CreateClass
 class Saiyajin{
     //Atributes
-    public string $nombre="Goku";
-    public int $nivel_pelea=1000;
-  
+    public string $nombre;
+    public int $nivel_pelea;
+
+    public function __construct($nombre, $nivel_pelea){
+        $this->nombre=$nombre;
+        $this->nivel_pelea=$nivel_pelea;
+    }
+      
     //Method1
     public function Saludar():string{
         return "Hola Soy " . $this->nombre;
@@ -22,13 +27,13 @@ class Saiyajin{
 
 }
 
-
-
 //InstanciaDeClase
-$obj_goku = new Saiyajin();
-$obj_vegueta = new Saiyajin();
+$goku = new Saiyajin("Goku",1000);
+echo $goku->Characteristcs();
 
+echo "<br><br>";
 
-
+$vegueta = new Saiyajin("Vegueta",100);
+echo $vegueta->Characteristcs();
 
 ?>
