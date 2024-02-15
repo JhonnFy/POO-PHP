@@ -1,26 +1,34 @@
 <?php
 
-// CreandoLaClase
+//CreateClass
 class Saiyajin{
-    //Atributos
+    //Atributes
     public string $nombre="Goku";
     public int $nivel_pelea=1000;
   
-    //Metodo1
+    //Method1
     public function Saludar():string{
         return "Hola Soy " . $this->nombre;
     }
-    //Metodo2
+    //Method2
     public function Nivel_De_Pelea(){
-        return "Hola Soy " . $this->nombre . " Mi Nivel De Pelea Es: " . $this->nivel_pelea;
+        return " Mi Nivel De Pelea Es: " . $this->nivel_pelea;
     }
+
+    //Method3
+    public function Characteristcs(){
+        return $this->Saludar() . " & " . $this->Nivel_De_Pelea();
+    }
+
 }
 
 
 
 //InstanciaDeClase
-$goku = new Saiyajin();
+$obj_goku = new Saiyajin();
+$obj_vegueta = new Saiyajin();
 
-var_dump($goku)
+
+
 
 ?>
