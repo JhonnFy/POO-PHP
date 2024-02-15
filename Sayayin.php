@@ -21,4 +21,6 @@ class Saiyajin{
 //InstanciaDeClase
 $goku = new Saiyajin();
 
+var_dump($goku)
+
 ?>
