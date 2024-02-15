@@ -12,12 +12,12 @@ class Saiyajin{
     }
       
     //Method1
-    public function Saludar():string{
-        return "Hola Soy " . $this->nombre;
+    public function Saludar($saludar="Hola Soy"):string{
+        return $saludar . $this->nombre;
     }
     //Method2
-    public function Nivel_De_Pelea(){
-        return " Mi Nivel De Pelea Es: " . $this->nivel_pelea;
+    public function Nivel_De_Pelea($nivel_pelea="Mi Nivel De Pelea Es:"){
+        return $nivel_pelea .  $this->nivel_pelea;
     }
 
     //Method3
