@@ -21,5 +21,5 @@
     }
 
     $goku = new Saiyajin();
-    
+
 ?>
